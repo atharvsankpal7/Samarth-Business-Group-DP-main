@@ -56,7 +56,6 @@
   <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <img loading="lazy" src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg" />
 
       <div class="container">
         <div class="row gy-4 justify-content-between">
@@ -593,12 +592,17 @@
 
     <div class="container copyright text-center mt-4">
       <p>
-        © <span>2024 </span>
+        © <span id="year"></span>
         <strong class="px-1 sitename">Samarth Business Group</strong>
         <span>All Rights Reserved Designed &amp; Developed by</span>
-        <strong class="sitname"><a href="https://display-promotion.vercel.app/">Display Promotion</a></strong>
+        <strong class="sitename"><a href="https://display-promotion.vercel.app/">Display Promotion</a></strong>
       </p>
     </div>
+    
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
   </footer>
 
   <!-- Scroll Top -->
