@@ -250,3 +250,7 @@
     });
   }
 })();
+
+
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('age').textContent = new Date().getFullYear() - 2007;
